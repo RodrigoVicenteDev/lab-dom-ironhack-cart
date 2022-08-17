@@ -71,6 +71,12 @@ let criador = document.createElement('tr')
             <button class="btn btn-remove">Remove</button>
           </td>`
    pai.appendChild(criador)
+
+   let butonsremove = document.querySelectorAll(".btn-remove")
+butonsremove.forEach( (element)=> {
+  element.addEventListener( 'click',removeProduct )
+  
+})
   
 }
 
